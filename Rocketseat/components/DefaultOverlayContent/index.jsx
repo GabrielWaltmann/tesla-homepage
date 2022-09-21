@@ -11,7 +11,8 @@ export function DefaultOverlayContent({ label, description}) {
 
             </Heading>
             <Buttons>
-                <button>Custom Order</button>
+                <button
+                className='black'>Custom Order</button>
                 <button className='white'>Existing Inventory</button>
             </Buttons>
         </Container>

@@ -1,4 +1,10 @@
 import { Container } from './styles.js'
-export function ModelSection({ modelName }) {
-  return <Container>{modelName}</Container>
+
+export function ModelSection({content, key }) {
+  return (
+    <Container
+      key={key}
+    >{content}
+    </Container>
+  )
 }

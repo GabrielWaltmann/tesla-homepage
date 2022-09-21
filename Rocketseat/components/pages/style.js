@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 export const Container = styled.section`
-
-
 .colored:nth-child(1) {
 background: #f1ffe7;
 }

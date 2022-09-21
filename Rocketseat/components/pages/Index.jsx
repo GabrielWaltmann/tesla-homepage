@@ -1,23 +1,31 @@
 import { Container } from "./style.js";
 import { ModelsWrapper } from "../Model/ModelsWrapper/modelWrapper";
-import { v4 as uuidv4 } from 'uuid';
 import { ModelSection } from "../Model/ModelsSection/ModelSection";
-import { DefaultOverlayContent } from "../DefaultOverlayContent/index";
+import { v4 as uuidv4 } from 'uuid';
+import {modelsProps} from './modelsProps' 
 export function Index() {
   return (
     <>
-      <Container>
-        <ModelsWrapper>
-          <div>
-            {[
-              "Model One",
-              "Model Two",
-              "Model Three",
-              "Model Four",
-              "Model Five",
-              "Model Six",
-              "Model Seven",
-            ].map((modelName) => {
+
+      <Container>  
+        {
+
+          modelsProps.map(props => {
+
+            return( 
+            <ModelSection 
+              content={props.name}
+              key={uuidv4()}
+            ></ModelSection>
+            )
+          })
+        }
+      </Container>
+    </>
+  );
+}
+
+/* .map((modelName) => {
               <ModelSection
                 key={uuidv4()}
                 className="colored"
@@ -31,10 +39,4 @@ export function Index() {
                 
               />;
               
-            })}
-          </div>
-        </ModelsWrapper>
-      </Container>
-    </>
-  );
-}
+            }) */
