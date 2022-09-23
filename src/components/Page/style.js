@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-export const Container = styled.section`
+import styled from "styled-components";
+
+export const Container = styled.main`
 .colored:nth-child(1) {
 background: #f1ffe7;
 }
@@ -20,5 +21,4 @@ background: #90f29c;
 }
 .colored:nth-child(7) {
 background: #77e68c;
-}
-`
+}`
