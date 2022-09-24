@@ -4,6 +4,7 @@ import Index from './components/Page/Index'
 import  CreateGlobalStyle  from "./style"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
 
     <Index/>

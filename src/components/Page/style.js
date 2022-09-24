@@ -21,4 +21,26 @@ background: #90f29c;
 }
 .colored:nth-child(7) {
 background: #77e68c;
-}`
+}
+
+.barWrapper {
+    position: fixed;
+    z-index: 10;
+    background: #000000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+}
+  
+  
+.bar {
+    background: #8e8e8e;
+    width: 25%;
+}
+
+.barWrapper,
+.bar {
+    height: 10px;
+}
+`
