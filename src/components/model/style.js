@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+    background-image: url(${(props) => props.src });
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     text-align : center;
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-/*
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0; */
 
+    /* Start Scrool Snap */
+    scroll-snap-align: start;
 `
+
 export const Heading = styled.div`
     margin-top:16.5vh;
     text-align: center;
@@ -20,10 +22,11 @@ export const Heading = styled.div`
         font-weight: 500;
         font-size: 40px;
         line-height: 48px;
-        color: #393c41 ;
+        color: #171A20 ;
+        transition: all .7s ease;
     }
 
-    h2{
+    h2, a{
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
@@ -43,7 +46,7 @@ export const Buttons = styled.div`
     
     button{
         min-width: 210px;
-        background-color: #1a1720;
+        background-color: #171a20cc;
         color: #ffffff;
         opacity: 0.8;
 
@@ -60,7 +63,7 @@ export const Buttons = styled.div`
 
         &.buttonWhite{
             background-color: #ffffff;
-            color: #1a1720;
+            color: #171a20cc;
             opacity: 0.65;
 
         }
