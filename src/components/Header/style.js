@@ -1,8 +1,13 @@
 import styled from "styled-components";
+
 export const Container = styled.header`
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    z-index: 2;
+    width: 100%;
 
     img{
         padding: 1rem 1.25rem;
