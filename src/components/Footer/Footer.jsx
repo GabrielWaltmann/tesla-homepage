@@ -1,10 +1,19 @@
-import { useEffect } from "react"
-import styled from "styled-components"
+import { Container } from "../Footer/style"
+
+export function hideFooter(){
+    setInterval(() => {
+        const footerClasslist = document.querySelector(`Footer`).classList
+        const scrollPositon = document.querySelector(`main`).scrollTop
+
+        if(scrollPositon >= 5300) footerClasslist.add(`active`)
+        else footerClasslist.remove(`active`)
+    }, 100);
+}
 
 export function Footer (){
-
+    hideFooter()
     return (
-        <Containter >
+        <Container>
             <a href="#">Tesla © 2022</a>
             <a href="#">Privacy  Legal</a>
             <a href="#">Vehicle Recalls</a>
@@ -13,17 +22,6 @@ export function Footer (){
             <a href="#">News</a>
             <a href="#">Engage</a>
             <a href="#">Locations</a>
-        </Containter>
+        </Container>
     )
 }
-
-const Containter = styled.footer`
-    background-color: #000000;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    a{
-        color: #5c5e62;
-    }
-`

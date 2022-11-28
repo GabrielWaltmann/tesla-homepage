@@ -43,6 +43,7 @@ export const Heading = styled.section`
         font-size: 1rem;
         line-height: 20px;
         letter-spacing: .8px;
+
         color: #5c5e62;
     }
 `
@@ -52,6 +53,7 @@ export const Buttons = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
 
     margin-bottom: 130px;
     
