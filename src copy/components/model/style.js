@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
+/* 
+Patern media querrys 
+@media (min-width: 1200px) {}
+@media (min-width: 600px) {}
+*/
+
+
 export const Container = styled.section`
     background-image: url(${(props) => props.src });
-    background-size: cover;
+    background-size: 150%;
     background-position: center;
 
     display: flex;
@@ -10,6 +17,7 @@ export const Container = styled.section`
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
+    position: relative;
 
     /* Start Scrool Snap */
     scroll-snap-align: start;
@@ -24,6 +32,7 @@ export const Heading = styled.div`
         line-height: 48px;
         color: #171A20 ;
         transition: all .7s ease;
+        letter-spacing: .6px;
     }
 
     h2, a{
@@ -34,8 +43,6 @@ export const Heading = styled.div`
     }
 
 `
-
-
 export const Buttons = styled.div`
     display: flex;
     flex-direction: column;

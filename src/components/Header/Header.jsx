@@ -1,58 +1,22 @@
-import { Container, Button, List } from "./style";
-export function Header() {
-  return (
-    <Container>
-      {/* Logo */}
-      <img
-        src="src\assets\teslaLogoSmall.svg"
-        alt="Logo Da tesla"
-        className="logo"
-      />
+import styled from "styled-components"
+import { Container, Navigator, Button } from "./style"
+import { products } from "../../database/products"
+export function Header(){
+    return(
+        <Container>
 
-      {/* nav */}
-      <nav>
-        <List>
-          <Button>
-            <span>Model S</span>
-          </Button>
+            <img src="src\assets\teslaLogoSmall.svg" alt="Tesla logo" />
 
-          <Button>
-            <span>Model 3</span>
-          </Button>
-
-          <Button>
-            <span>Model X</span>
-          </Button>
-
-          <Button>
-            <span>Model Y</span>
-          </Button>
-
-          <Button>
-            <span>Solar Roof</span>
-          </Button>
-
-          <Button>
-            <span>Solar Panels</span>
-          </Button>
-        </List>
-      </nav>
-
-      <nav>
-        <List>
-          <Button>
-            <span>Shop</span>
-          </Button>
-
-          <Button>
-            <span>Accout</span>
-          </Button>
-
-          <Button>
-            <span>Menu</span>
-          </Button>
-        </List>
-      </nav>
-    </Container>
-  );
+            <Navigator>
+                {products.map((product) => {
+                    return ( 
+                        <Button href="#" key={product.name}>
+                            {product.name}
+                        </Button> 
+                    )
+                })}
+            </Navigator>
+            <Button href="#">Account</Button>
+        </Container>
+    )
 }
