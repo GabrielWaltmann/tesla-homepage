@@ -5,8 +5,10 @@ import { Sections } from "../components/Sections/Sections"
 import { Footer} from "../components/Footer/Footer"
 
 export function HomePage(){
+
     return(
         <Container>
+
             <GlobalStyle/>
             <Header/>
             <Sections/>
