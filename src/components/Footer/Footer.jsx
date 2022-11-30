@@ -9,7 +9,6 @@ export function hideFooter(){
         if(scrollPositon >= 5300) footerClasslist.add(`active`)
         else if(width <= 1100) footerClasslist.remove(`active`)
         else footerClasslist.remove(`active`)
-        console.log(width)
     }, 100);
 }
 
