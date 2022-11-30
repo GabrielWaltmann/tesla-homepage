@@ -2,7 +2,7 @@ import { products } from "../../database/products";
 import { Container, Section, Heading, Buttons } from "./style";
 
 function createSection(name, description, url, buttonOne, buttonTwo){
-    url = "src/assets/" + url
+    url = "./src/assets/" + url
 
     if(name === 'Accessories' ){
         return (

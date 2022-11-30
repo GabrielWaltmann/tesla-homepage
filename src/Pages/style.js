@@ -1,5 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
-import styled from 'styled-components'
+
 export const GlobalStyle = createGlobalStyle`
   
     *{
@@ -14,10 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        overflow-x: hidden;
         height: 100%;
         width: 100vw;
     }
 `
-
-export const Container = styled.div``
