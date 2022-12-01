@@ -1,44 +1,44 @@
 export const products = [
     {
         name: 'Model 3', 
-        url: 'Desktop-Model3.jpeg', 
+        url: 'Model3.jpg', 
         description: 'Schedule a Test Drive', 
         buttonOne: 'Custom Ordem', 
         buttonTwo: 'Existing Inventory'
     },
     {
         name: 'Model Y', 
-        url: 'Desktop-ModelY.jpeg' , 
+        url: 'ModelY.jpg' , 
         description: 'Schedule a Test Drive', 
         buttonOne: 'Custom Ordem', 
         buttonTwo: 'Existing Inventory'},
     {
         name: 'Model S', 
-        url: 'Desktop-ModelS.jpeg' , 
+        url: 'ModelS.jpg' , 
         description: 'Schedule a Test Drive', 
         buttonOne: 'Custom Ordem', 
         buttonTwo: 'Existing Inventory'},
     {
         name: 'Model X', 
-        url: 'Desktop-ModelX.jpeg' , 
+        url: 'ModelX.jpg' , 
         description: 'Schedule a Test Drive', 
         buttonOne: 'Custom Ordem', 
         buttonTwo: 'Existing Inventory'},
     {
         name: 'Solar Panels', 
-        url: 'Desktop-SolarPanels.jpeg' , 
+        url: 'SolarPanels.jpg' , 
         description: 'Lowest Cost Solar Panels in America', 
         buttonOne: 'Ordem Now', 
         buttonTwo: 'Learn More'},
     {
         name: 'Solar Roof', 
-        url: 'Desktop-SolarRoof.jpeg' , 
+        url: 'SolarRoof.jpg' , 
         description: 'Produce Clean Energy From Your Roof' , 
         buttonOne: 'Ordem Now', 
         buttonTwo: 'Learn More'},
     {
         name: 'Accessories', 
-        url: 'Desktop-Accessories.jpg' , 
+        url: 'Accessories.jpg' , 
         description: '',
         buttonOne: 'Shop Now', 
         buttonTwo: false

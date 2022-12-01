@@ -70,16 +70,18 @@ export const Menu = styled.ul`
     transition: all .6s ease-in;
 
     &.hidden{
-         right: -50%;
+         right: -100%;
+         display: none !important;
     }
     
     li{
         width: 100%;
-        transition: all .3s;
+        transition: all .2s;
 
         &:hover{
             background-color: #a2b4c34a;
         }
+
         a{
             height: 2rem;
             width: 100%;
@@ -105,8 +107,5 @@ export const Menu = styled.ul`
         &:hover{
             background-color: #a2b4c34a;
         }
-
-        
     }
-
 `

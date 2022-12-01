@@ -2,13 +2,12 @@ import styled from "styled-components"
 
 export const Container = styled.main`
     height: 100vh;
+    width: 100vw;
 
     /* Attach at the start */
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-
 `
-
 export const Section = styled.section`
     background-image: url(${(props) => `${props.src}` });
     background-size: 150%;
@@ -22,7 +21,6 @@ export const Section = styled.section`
 
     /* Start Scrool Snap */
     scroll-snap-align: start;
-
 `
 
 export const Heading = styled.section`
@@ -52,7 +50,6 @@ export const Buttons = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin-bottom: 130px;
     
     button{
@@ -61,11 +58,9 @@ export const Buttons = styled.div`
         background-color: #171a20cc;
         color: #ffffff;
         opacity: 0.8;
-
         font-size: 1rem;
         font-weight: 500;
         letter-spacing: 0.6px;
-
         padding: 13px 40px;
         border-radius: 4px;
         border: none;

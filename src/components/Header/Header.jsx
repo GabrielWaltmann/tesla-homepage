@@ -2,17 +2,14 @@ import { Container, Navigator, Button, MenuButton, Menu } from "./style"
 import { products } from "../../database/products"
 
 export function Header(){
-
     function showOrHideTheMenu(){
         const menu = document.querySelector(`.close`).parentElement 
         menu.classList.toggle(`hidden`)
-
     }
-
 
     return(
         <Container>
-            <img src="src\assets\teslaLogoSmall.svg" alt="Tesla logo" />
+            <img src="../teslaLogo.svg" alt="Tesla logo" />
 
             <Navigator className="navigator">
                 {products.map((product) => {
