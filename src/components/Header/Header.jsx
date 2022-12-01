@@ -9,7 +9,7 @@ export function Header(){
 
     return(
         <Container>
-            <img src="../teslaLogo.svg" alt="Tesla logo" />
+            <img src="src/assets/teslaLogo.svg" alt="Tesla logo" />
 
             <Navigator className="navigator">
                 {products.map((product) => {

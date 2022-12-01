@@ -5,7 +5,8 @@ function createSection(name, description, url, buttonOne, buttonTwo){
     const width = document.body.clientWidth 
     
     function accessorieSection(device){
-        const img = "../" + device + "/" + url 
+        const img = "src/assets/" + device + "/" + url
+
         return(
              <Section 
             src={img} 
@@ -24,7 +25,7 @@ function createSection(name, description, url, buttonOne, buttonTwo){
     }
 
     function patternSection(device){
-        const img = "../" + device + "/" + url 
+        const img = "src/assets/" + device + "/" + url
         return (
             <Section 
             src={img} 
