@@ -31,7 +31,7 @@
 - [ ] Menu para dispositivos móveis
 
 <br><hr>
-<p align="center">Para ver o App hospedado, clique aqui: <a href="https://tesla-homepage.netlify.app/">Tesla Home Page</a></p>
+<p align="center">Para ver o App hospedado, clique aqui: <a href="https://tesla-homepage-gabriel.netlify.app/">Tesla Home Page</a></p>
 <hr><br>
 
 <div align="center">
